@@ -77,6 +77,11 @@ header .contact-btn {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  width: 197px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
 }
 
 .hero {
@@ -187,7 +192,10 @@ header .contact-btn {
 .card-inner-heading{
   border: 1 px solid green;
   font-size: 1rem;
+  position: relative;
+  right: 20px;
 }
+
 .read-1{
   margin-top: 30px;
  text-align: center;
@@ -550,7 +558,7 @@ width: 60px;
   .logos{
     flex-direction: column;
     position: relative;
-    right: 160px;
+    right: 140px;
   }
   .hero {
   flex-direction: column;
@@ -567,6 +575,10 @@ width: 60px;
  margin-bottom: 35px;
   
 }
+.pconten{
+  position: relative;
+  right: 25px;
+}
 .hero-content{
   margin: 0 auto;
   
@@ -576,8 +588,11 @@ width: 60px;
   margin-bottom: 20px;
 }
 .button{
+  position: relative;
   width: 100%;
   margin-left: 65px;
+  top: 40px;
+  right: 20px;
   
 }
 .heading-1{
@@ -593,12 +608,28 @@ width: 60px;
 .card {
   width: 80vw;
 }
+.card-inner{
+  position: relative;
+  right: 20px;
+}
 .curriculum{
   width: 90vw;
 }
 .curriculum-heading{
   width: 100%;
   margin-left: -470px;
+}
+#point-1{
+  position: relative;
+  right: 35px;
+}
+#point-2{
+position: relative;
+  right: 35px;
+}
+#point-3{
+position: relative;
+  right: 35px;
 }
 
 .button1{
@@ -612,6 +643,10 @@ width: 60px;
   width: 90vw;
   margin-left: -400px;
 
+}
+.Our-Stories-heading{
+  position: relative;
+  right: 35px;
 }
 
 
@@ -656,10 +691,15 @@ width: 60px;
   
   max-width: 400px;
   position: relative;
-  left: 500px;
+  left: 460px;
   top: 280px;
   margin-bottom: -70px;
   
+  
+}
+#story-heading{
+   position: relative;
+   right: 70px;
 }
 .our-stories-section{
   position: relative ;
@@ -671,7 +711,7 @@ width: 60px;
 .view-all{
   position: relative;
   top: 400px;
- margin-left: 560px;
+ margin-left: 505px;
 }
 .footer {
      flex-direction: column;
