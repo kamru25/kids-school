@@ -132,7 +132,7 @@ header .contact-btn {
 .curriculum {
   text-align: center;
   padding: 50px;
-  background-image: url(assets/bg.png);
+  background-image: url(../assets/bg.png);
   width: 1440px;
   height: 879px;
 }
@@ -275,8 +275,10 @@ width: 60px;
   padding: 50px ;
   width: 1440px;
   height: 1018px;
-  background: linear-gradient(#FFFFFF, #fff4e0);
- background-image: url(assets/bg.png); 
+  background: 
+  url(../assets/bg.png);
+  /* linear-gradient(135deg#FFFFFF, #fff4e0);
+ background-image:linear-gradient(to bottom,#FFFFFF ,#e8e5e1), */
   
   
   
