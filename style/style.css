@@ -1,286 +1,733 @@
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-
-.quicksand-font {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-
-/* shared style */
-.display-flex{
-  display: flex;
-}
-
-
-/* header style */
-
-
-
-/* navbar releted style */
-
 
 
 .navbar{
- justify-content: space-around;
- width: 1160px;
- height: 102px;
- margin: 0 auto;
- margin-top: 15px;
- text-align: center;
- align-items: center;
+  width: 1160px;
+  margin: 0 auto;
 }
 
-.nav-item{
-  list-style: none;
-  margin-right: 32px;
-  font-weight: 700;
-font-size: 1rem;
-
-}
-.nav-img{
+header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px 50px;
+  
+}
+header .logos {
+  display: flex;
+  align-items: center;
+}
+header .logos img {
+  width: 62px;
   height: 62px;
+  margin-right: 10px;
 }
-.school-text{
-  font-weight: 700;
-  font-size: 2rem;
+
+header .logos h1 {
+  font-size: 24px;
+  
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+
+.links-area{
+  list-style: none;
+  text-decoration: none;
+}
+
+.item{
+  list-style: none;
+  
+}
+.link-1{
+  color: #FEA301;
+}
+.link-2{
+  color: #01ACFD;
+}
+.link-3{
+  color: #05D4DF;
+}
+.link-4{
+  color: #5D58EF;
+}
+
+header .contact-btn {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero {
+  width: 1160px;
+  display: flex;
   align-items: center;
-  margin-left:-100px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1;
+}
+.content-heading{
+  font-size: 3.5rem;
+  font-weight: 600;
+  width: 640px;
+}
+.content-pera{
+ width: 640px;
+ height: 50px;
+ margin-top: 24px;
+ font-size: 1.25rem;
+ padding-right: 50px;
 }
 
 
-.primary-button{
-  background-color: #FEA301 ;
+.hero-content button {
   width: 197px;
   height: 50px;
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
+  margin-top: 24px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
   border: none;
-  color: white;
-  align-items: center;
+  border-radius:12px;
+  cursor: pointer;
   font-size: 1.25rem;
-  font-weight: 600;
 }
-.color-1{
-color: #FEA301;
-}
-.color-2{
-color: #01ACFD;
-}
-.color-3{
-color: #05D4DF;
-}
-.color-4{
-color: #5D58EF;
-}
-.header-section{
- width: 1160px;
-height: 575px;
-margin: 0 auto;
-display: flex;
-}
-.header-content-area{
-width: 640px;
-height: 183px;
 
+
+.hero-image img {
+  width: 100%;
+  
 }
-.content-hading{
- font-size: 3.5rem;
-font-weight: 700;
-margin-top: 122px;
-}
-.content{
- width: 640px;
-height: 50px;
-font-size: 1.25rem;
-font-weight: 400;
-margin-top: 18px;
-}
-.content-area-button{
-width: 197px;
-height: 50px;
-font-size: 1.25rem;
-font-weight: 700;
-background-color: black;
-color: white;
-border-radius: 10px;
-border: none;
-margin-top: 10px;
-}
-.curriculum-section{
-  background-image: url(/assets/bg.png);
+/* cari */
+
+.curriculum {
+  text-align: center;
+  padding: 50px;
+  background-image: url(assets/bg.png);
   width: 1440px;
   height: 879px;
-  display: flex;
-}
-.curriculum-heading{
-  
-  margin-top: 60px;
-  margin-bottom: 80px;
-  text-align: center;
-  border: 2px solid green;
-  height: 20px;
-
-}
-.curriculum-section-div{
-  
-  height: 482px;
-  display: flex;
-  margin-top: 40px;
-  justify-content: space-between;
-  margin-left: 180px;
 }
 
-.curriculum-div-1{
-  margin-top: 200px;
+
+.curriculum h2 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+#cardss{
+  width: 1160px;
+  height: 481px;
+  display: flex;
+  gap: 30px;
+  
+  margin-left: 140px;
+
+}
+
+.card{
+  border-radius: 20px;
   width: 367px;
   height: 476px;
-  margin-right: 28px;
+  
+  border-radius: 12px;
   border: 1px solid green;
-  border: none;
-  border-radius: 20px;
-  background: linear-gradient(#FFF4DC,#FFFFFF);
-}
-.color-gr-1{
-   background: linear-gradient(#DEF5FF,#FFFFFF);
-}
-.color-gr-2{
-   background: linear-gradient(#FFF4DC,#FFFFFF);
-}
-.color-gr-3{
-   background: linear-gradient(#F2E8FF,#FFFFFF);
+  
 }
 
-.curriculum-section-img{
-  width: 136px;
-  height: 136px;
-  padding: 52px 115px 0px 115px;
- text-align: center;
+.card-img{
+  margin-right: 110px;
+  margin-top: 30px;
 }
-.curriculum-section-4{
+
+.curriculum .card h3 {
+  width: 200px;
   font-size: 1.5rem;
-  text-align: center;
+  margin: 32px 100px;
+  margin-left: 80px;
+
 }
-.curriculum-section-content{
+
+.curriculum .card p {
+  width: 280px;
+  height: 70px;
+  font-size: 1rem;
+  color: #808080;
+  
    
-   font-size: 1rem;
-   width: 270px;
-   height: 74px;
-   text-align: center;
-   padding: 33px 40px 0px 40px;
-   color: #808080;
+  margin-left: 40px;
+  
+ 
 }
-.read-1,.read-2,.read-3{
-  margin-top: 50px;
-  text-align: center;
-  : 33px 91px 0px 91px;
+
+.card-inner-heading{
+  border: 1 px solid green;
+  font-size: 1rem;
 }
 .read-1{
-  color: #64C8FF;
+  margin-top: 30px;
+ text-align: center;
+ color:  #F0AA00;
+  
 }
-.read-2{
-  color:#F0AA00;
+
+.curriculum .card .read-1 {
+  text-decoration: none;
+ color: #007bff;
+  font-weight: bold;
 }
-.read-3{
-  color: #8700FF;
+
+.arrow-simbole {
+  margin-top: 150px;
 }
-.hide{
-  display: none;
+
+
+.button1{
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-top:-900px;
+  padding: 10px;
+  border: none;
+  background-color:#FEA301 ;
+  color: white;
+  border-radius: 50%;
+  
 }
-@media screen and (max-width: 576px) {
+.button2{
+width: 60px;
+  height: 60px;
+}
+
+
+.heading-1{
+  color: #FEA301;
+  
+}
+.heading-2{
+   color:#01ACFD;
+}
+.card-color-1{
+  background: linear-gradient(#DEF5FF,#FFFFFF);
+}
+.card-color-2{
+  background: linear-gradient(#FFF4DC,#FFFFFF);
+}
+.card-color-3{
+  background: linear-gradient(#F2E8FF,#FFFFFF);
+  
+}
+.middele{
+  width: 200px;
+}
+
+
+/* story section */
+
+.our-stories-section {
+  text-align: center;
+  padding: 50px ;
+  width: 1440px;
+  height: 1018px;
+  background: linear-gradient(#FFFFFF, #fff4e0);
+  background-image: url(assets/bg.png);
   
   
-  .navbar{
- flex-direction: column;
- width: 95vh;
- margin: auto;
- text-align: left;
- align-items: center;
- height: 100px;
- border-bottom: 2px solid #FEA301 ;
- margin-bottom: 200px;
- 
+  
 }
-.nav-links{
-  flex-direction: column;
-  display: none;
+
+.Our-Stories-heading{
+  font-size: 2.5rem;
+  font-weight: 400px;
+  margin: 60px 0px 80px 0px;
 
 }
-.nav-img{
-  margin-left: -550px;
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 1160px ;
 }
-.school-text{
-  display: none;
+
+
+.story-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  width: 290px;
+  height: 301px;
 }
-.primary-button{
-  display: none;
+
+.story-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.header-section{
-  flex-direction: column;
-   flex-direction: column-reverse;
+
+.story-content {
+  padding: 20px;
+  text-align: left;
 }
-.main-img{
- 
-  margin-top: -200px;
-   margin-left: 15px;
-  margin-right: 8px;
-  width: 90vw;
-  margin-bottom: 40px;
- 
+
+.story-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.story-item.large .story-content h3 {
+  font-size: 24px;
+  margin: 15px 0;
   
-  
+}
+
+.story-date {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #3CD8E8;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  position: relative;
+  right: 30px;
+  bottom: 20px;
+  height: 38px;
+}
+.story-content{
+  position: relative;
+  font-size: 0.9rem;
+  right: 20px;
+}
+
+.date-1{
+  position: relative;
+  left: 38px;
+  height: 47px;
+  bottom: 45px;
+
+}
+.a-fun{
+  padding-left: 38px;
+
+}
+.story-long{
+  padding-left: 38px;
+  font-size: 1rem;
+  color: #666666;
+}
+.color{
+  background-color: #5D58F0;
 }
 .color-1{
-  margin-left: 120px;
+  background-color: #95B226;
 }
-.content-hading{
-   width: 90vw;
-   margin-top: -5px;
-   margin-left: 15px;
-   font-size: 2.5rem;
-   
+.color-2{
+  background-color: #95B226;
 }
-.content{
-   width: 90vw;
-   margin-left: 15px;
+.color-3{
+  background-color: #95B226;
 }
-.content-area-button{
-  width: 90vw;
-  margin-top: 40px;
-  margin-left: 15px;
+.story-content-1{
+  position: relative;
+ 
+  display: inline-block;
+  padding: 5px 10px;
+  top: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  margin-bottom: 10px;
+
+  justify-content: center;
+ 
+  
+  bottom: 30px;
+  
   
 }
 
-.curriculum-heading{
-  display: none;
-}
-.curriculum-section-div{
-  flex-direction: column;
-  width: 95vw;
-  padding-left: 60px;
-  margin-left: 1px;
+.story-item h3 {
+  margin: 15px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 402px;
+  height: 69px;
 
+}
+
+.story-item p {
+  font-size: 0.9rem;
+  color: #666666;
+  width: 433px;
+  height: 75px;
+}
+
+.view-all {
+  margin-top: 30px;
+  
+}
+
+.view-all button {
+  padding: 10px 20px;
+  background: #000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  width: 160px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
  
 }
-.curriculum-div-1{
-   margin-bottom: -150px;
+.view-all button:hover {
+  background: #444;
 }
-.read-1,.read-2,.read-3{
-  margin-bottom: 50px;
+.large-item{
+  width: 540px;
+  height: 630px;
 }
+
+/* Footer section */
+
+.footer {
+      background-color: #007bff;
+      width: 1510px;
+      height: 520px;
+      color: white;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      
+    }
+
+    .footer .section {
+      flex: 1;
+      margin: 0 20px;
+    }
+    .logo{
+      margin-top: 127px;
+      margin-left: 122px;
+      
+     
+    }
+   
+
+    .footer-first-heading{
+      width: 206px;
+      height: 80px;
+      font-size: 2.7rem;
+      margin-bottom: 15px;
+    }
+    .footer-sechond-h3{
+      width: 146px;
+      height: 30px;
+      font-size: 1.5rem;
+      font-weight: 600px;
+      margin-top: 123px;
+     
+    }
+
+    .footer-p{
+      font-size: 1.25rem;
+      line-height: 1.6;
+      width: 399px;
+      height: 100px;
+      margin: 35px 142px 180px 122px;
+    }
+
+    .footer-ul{
+      list-style: none;
+      padding: 0;
+     
+      margin-top: 32px;
+      font-size: 1rem;
+      
+    }
+
+    .footer .section ul li {
+      margin-bottom: 27px;
+    }
+    .keep-heading{
+      width: 250px;
+      height: 26px;
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin: 127px ;
+      margin-left: 112px;
+    }
+
+    .footer .section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-img {
+      display: flex;
+      gap: 10px;
+      position: relative;
+      margin-left: 112px;
+      bottom: 70px;
+    
+    }
+
+    
+    
+
+    .footer .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer .logo img {
+      width: 50px;
+      height: 50px;
+    }
+
+
+
+@media screen and (max-width: 576px) {
+  .navbar{
+    flex-direction:column;
+    width: 90vw;
+    
+  }
+  .navbar{
+    border-bottom: 3px solid gold;
+    width: 90vw;
+  }
+  .school,.links-area,.contact-btn{
+    display: none;
+  }
+  .logos{
+    flex-direction: column;
+    position: relative;
+    right: 160px;
+  }
+  .hero {
+  flex-direction: column;
+   width: 90vw;
+  flex-direction: column-reverse;
+  }
+  .content-heading{
+  font-size: 2.5rem;
+  font-weight: 400;
+  width: 70vw;
+}
+.content-pera{
+ width: 100%;
+ margin-bottom: 35px;
+  
+}
+.hero-content{
+  margin: 0 auto;
+  
+}
+.hero-image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.button{
+  width: 100%;
+  margin-left: 65px;
+  
+}
+.heading-1{
+ margin-left: 70px;
+  
+}
+#cardss{
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -250px;
+}
+.card {
+  width: 80vw;
+}
+.curriculum{
+  width: 90vw;
+}
+.curriculum-heading{
+  width: 100%;
+  margin-left: -470px;
+}
+
+.button1{
+  width: 105;
+  display: none;
+  position: relative;
+  
+}
+
+.our-stories-section{
+  width: 90vw;
+  margin-left: -400px;
 
 }
 
 
+ .stories-grid {
+   grid-template-columns: repeat(2, 1fr);
+   top: 400px;
+   width:100%;
+   position: relative;
+   left: 35px;
+   width: 100%;
+   right: 200px;
+   
+}
+
+.story-item{
+  flex-direction: column;
+  position: relative;
+  left: 400px;
+  width: 38vw;
+}
+.color{
+ margin-left: 42px;
+}
+.color-1{
+  margin-left: 40px;
+}
+.color-2{
+  margin-left: 40px;
+ 
+}
+.color-3{
+   margin-left: 10px;
+}
+
+
+
+
+.large{
+  display: none;
+}
+.Our-Stories-heading{
+  margin-top: -200px;
+  max-width: 200px;
+  position: relative;
+ display: none;
+  
+}
+.our-stories-section{
+  position: relative ;
+  top: 120px;
+  right: 30px;
+  max-width: 358px;
+}
+.view-all{
+  position: relative;
+  top: 400px;
+ margin-left: 560px;
+}
+.footer {
+     flex-direction: column;
+     width: 100%;
+     height: 850px;
+     position: relative;
+     top: 300px;
+     margin-right: 400px;
+     
+      
+    }
+    .footer-first-heading{
+      width: 100%;
+      position: relative;
+      top: 35px;
+      right: 120px;
+     
+    }
+ 
+    .logo{
+      display: flex;
+      margin-left: -30px;
+      
+      
+    }
+    .img122{
+      margin-left: -235px;
+      
+
+
+
+    }
+    .footer-ul{
+      margin-left: -20px;
+    }
+    .footer-p{
+      width: 100%;
+      position: relative;
+      right: 150px;      
+    }
+    .section{
+      width: 100%;
+      margin-top: -200px;
+      margin-left: -20px;
+    
+    }
+    .footer-first-heading{
+      margin-left: 120px;
+      margin-top: -100px;
+    }
+
+   
+    
+    .footer-sechond-h3{
+      width: 100%;
+      margin-top: -140px;
+      margin-left: -20px;
+    }
+    .footer-ul{
+      width: 100%;
+    }
+    .keep-heading{
+      width: 100%;
+      margin-top: -1px;
+      margin-left: -20px;
+
+    }
+    .social-img{
+      margin-left: -20px;
+    }
+     
+
+
+}
 
 
